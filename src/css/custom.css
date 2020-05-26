@@ -15,6 +15,10 @@
   --ifm-color-primary-lighter: rgb(212, 173, 102);
   --ifm-color-primary-lightest: rgb(224, 188, 146);
   --ifm-code-font-size: 95%;
+  --fire-element: #dd2222;
+  --water-element: #1a9cd4;
+  --light-element: #c2ad47;
+  --shadow-element: #995599;
 }
 
 .docusaurus-highlight-code-line {
@@ -22,8 +26,4 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
-}
-
-bcard {
-  color: #ff862c; 
 }

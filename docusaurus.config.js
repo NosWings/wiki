@@ -20,9 +20,10 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog',
-        label: 'Patch Notes',
-        position: 'left'},
+        {
+          to: 'blog',
+          label: 'Patch Notes',
+          position: 'left'},
         {
           href: 'https://github.com/noswings/wiki',
           label: 'GitHub',
