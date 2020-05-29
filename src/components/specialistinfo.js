@@ -34,7 +34,7 @@ export default ({spId, name, specialistNumber, className, elementType}) => (
 
     <table>
         <tr>
-            <th rowspan="3">
+            <th rowSpan="3">
                 <img src={'https://nosapki.nostale.club/images/Ikona/' + (32500 + (+spId)*2) + '.png'} />
             </th>
             <td>
