@@ -1,7 +1,17 @@
 module.exports = {
-  someSidebar: {
-    'Index': ['index'],
-    'Cooking System': ['cooking-system/example'],
-    'Contribution': ['contribution/firststep']
-  },
+  docs: [
+    {
+      type: 'category',
+      label: 'Wiki',
+      items: ['introduction'],
+    },
+    {
+      type: 'category',
+      label: 'Custom Content',
+      items: [
+        'custom-content/qol-changes',
+        'custom-content/day-night',
+      ],
+    }
+  ]
 };

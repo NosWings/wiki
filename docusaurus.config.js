@@ -1,7 +1,13 @@
+
+const allDocHomesPaths = [
+  '/docs',
+  '/docs/next'
+];
+
 module.exports = {
   title: 'NosWings Wiki',
   tagline: 'NosWings Wiki',
-  url: 'http://wiki.noswings.com',
+  url: 'https://wiki.noswings.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'noswings',
@@ -13,17 +19,13 @@ module.exports = {
         alt: 'NosWings Logo',
         src: 'img/logo.svg',
       },
-      links: [
+      items: [
         {
-          to: 'docs/',
+          to: '/',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Game Content',
           position: 'left',
         },
-        {
-          to: 'blog',
-          label: 'Patch Notes',
-          position: 'left'},
         {
           href: 'https://github.com/noswings/wiki',
           label: 'GitHub',
@@ -51,10 +53,6 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Patch Notes',
-              to: 'blog',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/noswings',
             },
@@ -63,23 +61,18 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} NosWings.`,
     },
-  },
+  },  
+  plugins: [],
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'index',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
             'https://github.com/noswings/wiki/edit/master/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl: 'https://github.com/noswings/wiki/edit/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
